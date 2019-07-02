@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".toppings"
+    android:largeHeap="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.example.joselara.pizza5.headGrag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton3"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="20"
+                                android:adjustViewBounds="false"
+                                android:background="@android:color/transparent"
+                                android:cropToPadding="false"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/swoosh" />
+
+                            <ImageView
+                                android:id="@+id/sizeView"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/ssize" />
+
+                            <TextView
+                                android:id="@+id/sizeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="20"
+                                android:gravity="center_horizontal"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp" />
+
+                            <SeekBar
+                                android:id="@+id/sizeSeek"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="80dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="80dp"
+                                android:layout_marginBottom="30dp"
+                                android:layout_weight="20"
+                                android:max="5"
+                                android:thumb="@drawable/thumbthree"
+                                android:thumbOffset="1dp" />
+
+                            <TextView
+                                android:id="@+id/sauceTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_weight="20"
+                                android:gravity="center_horizontal"
+                                android:max="3"
+                                android:text="SAUCE"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <SeekBar
+                                android:id="@+id/sauceSeek"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_weight="20"
+                                android:max="2" />
+
+                            <TextView
+                                android:id="@+id/crustTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_weight="20"
+                                android:gravity="center_horizontal"
+                                android:text="CRUST"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <SeekBar
+                                android:id="@+id/crustSeek"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_weight="20"
+                                android:max="2" />
+
+                            <TextView
+                                android:id="@+id/cheeseTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_weight="20"
+
+                                android:gravity="center_horizontal"
+                                android:text="CHEESE"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <SeekBar
+                                android:id="@+id/cheeseSeek"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_weight="20"
+                                android:max="3" />
+
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/swoosh" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtPepperoni"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Pepperoni"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/Hamtxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Ham"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/pepView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/pepoff" />
+
+                        <ImageView
+                            android:id="@+id/hamView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/hamoff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <SeekBar
+                            android:id="@+id/pepSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4"
+
+                            android:splitTrack="false"
+
+                            android:thumbOffset="10px"
+                             />
+
+                        <SeekBar
+                            android:id="@+id/hamseek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/pepleft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/pepcentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/centrechoose" />
+
+                        <ImageView
+                            android:id="@+id/pepright"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                        <ImageView
+                            android:id="@+id/hamleft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/hamcentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/centrechoose"
+                             />
+
+                        <ImageView
+                            android:id="@+id/hamright"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtGroundBeef"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Ground Beef"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/sausageTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Italian Sauage"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/beefView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/beefoff" />
+
+                        <ImageView
+                            android:id="@+id/sausageView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/sausageoff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <SeekBar
+                            android:id="@+id/beefSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                            android:thumbOffset="5dp" />
+
+                        <SeekBar
+                            android:id="@+id/sausSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                            android:thumbOffset="5dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/beefLeft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/beefCentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/centrechoose" />
+
+                        <ImageView
+                            android:id="@+id/beefRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                        <ImageView
+                            android:id="@+id/sausleft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/sauscentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/centrechoose"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="353dp" />
+
+                        <ImageView
+                            android:id="@+id/sausRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/baconTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Bacon"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/txtGreenPepper"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Green Pepper"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/baconView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/baconoff" />
+
+                        <ImageView
+                            android:id="@+id/greenpepView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/greenpepoff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+
+                        <SeekBar
+                            android:id="@+id/bacseek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                            android:thumbOffset="5dp"
+
+                            android:splitTrack="false"
+                            />
+
+
+
+                        <SeekBar
+                            android:id="@+id/greenPSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                            android:thumbOffset="10px"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/bacleft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/baccentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/centrechoose"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="353dp" />
+
+                        <ImageView
+                            android:id="@+id/bacright"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                        <ImageView
+                            android:id="@+id/greenpepleft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/greeenpepcentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/centrechoose" />
+
+                        <ImageView
+                            android:id="@+id/greenpepright"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtTomato"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Tomato"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/TxtBlackOlives"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Black Olives"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/tomatoView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/tomatoof" />
+
+                        <ImageView
+                            android:id="@+id/blackOliveView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/blackolivesoff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+
+                        <SeekBar
+                            android:id="@+id/tomatoSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="4"
+                             />
+
+
+
+                        <SeekBar
+                            android:id="@+id/blackOliveSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                             />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/tomatoLeft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/tomatoCentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/centrechoose" />
+
+                        <ImageView
+                            android:id="@+id/tomatoRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                        <ImageView
+                            android:id="@+id/blackOlivesLeft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/blackOlivesCentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/centrechoose"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="353dp" />
+
+                        <ImageView
+                            android:id="@+id/blackOlivesRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/olivesTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Green Olives"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/mushText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Mushrooms"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/olivesView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/olivesoff" />
+
+                        <ImageView
+                            android:id="@+id/mushView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/mushoff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+
+
+                        <SeekBar
+                            android:id="@+id/olivesSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                            />
+
+
+                        <SeekBar
+                            android:id="@+id/mushSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                             />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/olivesleft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/olivesCentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/centrechoose" />
+
+                        <ImageView
+                            android:id="@+id/olivesRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                        <ImageView
+                            android:id="@+id/mushleft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/mushcentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/centrechoose"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="353dp" />
+
+                        <ImageView
+                            android:id="@+id/mushRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtpineapple"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Pineapple"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/txtOnion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:text="Onions"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/pineapleView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/pineappleoff" />
+
+                        <ImageView
+                            android:id="@+id/onionView"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="50"
+                            app:srcCompat="@drawable/onionoff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+
+                        <SeekBar
+                            android:id="@+id/pineappleSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                          />
+
+
+
+                        <SeekBar
+                            android:id="@+id/onionSeek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:max="4"
+                            android:progress="0"
+                             />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/pineapleLeft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/pineapleCentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/centrechoose" />
+
+                        <ImageView
+                            android:id="@+id/pineapleRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                        <ImageView
+                            android:id="@+id/onionLeft"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/leftchoose" />
+
+                        <ImageView
+                            android:id="@+id/onionCentre"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/centrechoose"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="353dp" />
+
+                        <ImageView
+                            android:id="@+id/onionRight"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/rightunchoose" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <Button
+                            android:id="@+id/previousBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/frame"
+                            android:text="Cancel"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+                        <Button
+                            android:id="@+id/nextBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/frame"
+                            android:text="Add To Cart"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/previousBtn"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

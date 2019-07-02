@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">pizza7</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_cart">cart</string>
+
+    <string name="size">cart</string>
+    <string name="sauce">cart</string>
+    <string name="cheese">cart</string>
+
+    <string name="baby">Baby - 6 Slices</string>
+    <string name="small">Small - 8 Slices</string>
+    <string name="medium">Medium - 12 Slices</string>
+    <string name="large">Large - 16 Slices</string>
+    <string name="queen">Queen - 24 Slices</string>
+    <string name="king">King - 36 Slices</string>
+    <string name="title_activity_carttest1">carttest1</string>
+
+
+</resources>

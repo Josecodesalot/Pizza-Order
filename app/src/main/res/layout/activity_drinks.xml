@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".drinks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.example.joselara.pizza5.headGrag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:background="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/swoosh" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/dasaniImg"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@mipmap/dasani" />
+
+                    <TextView
+                        android:id="@+id/dasaniTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="Dasani Bottle $ 1.25"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:fontFamily="@font/actor" />
+
+                    <ImageView
+                        android:id="@+id/dasaniadd"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="15"
+                        app:srcCompat="@drawable/carticon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/cokeImg"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@mipmap/coke" />
+
+                    <TextView
+                        android:id="@+id/cokeTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="CocaCola can $ 1.25"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:fontFamily="@font/actor" />
+
+                    <ImageView
+                        android:id="@+id/cokeadd"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="15"
+                        app:srcCompat="@drawable/carticon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/dietcokeImg"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@mipmap/dietcoke" />
+
+                    <TextView
+                        android:id="@+id/dietcokeTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="DietCoke Can $ 1.25"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:fontFamily="@font/actor" />
+
+                    <ImageView
+                        android:id="@+id/dietcokeadd"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="15"
+                        app:srcCompat="@drawable/carticon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/pepsiImg"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@drawable/pepsi" />
+
+                    <TextView
+                        android:id="@+id/pepsiTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="Pepsi Can $ 1.25"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:fontFamily="@font/actor" />
+
+                    <ImageView
+                        android:id="@+id/pepsiadd"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="15"
+                        app:srcCompat="@drawable/carticon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/drpepperImg"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@mipmap/drpepper" />
+
+                    <TextView
+                        android:id="@+id/drpepperTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="Dr. Pepper Cam $ 1.25"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:fontFamily="@font/actor" />
+
+                    <ImageView
+                        android:id="@+id/drpepadd"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="15"
+                        app:srcCompat="@drawable/carticon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/mountandewImg"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@drawable/mountandew" />
+
+                    <TextView
+                        android:id="@+id/mountanddewTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="Mountain Dew  $ 1.25"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:fontFamily="@font/actor" />
+
+                    <ImageView
+                        android:id="@+id/mountainadd"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="15"
+                        app:srcCompat="@drawable/carticon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/spriteImg"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="25"
+                        app:srcCompat="@mipmap/sprite" />
+
+                    <TextView
+                        android:id="@+id/spriteTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="Sprite Can $ 1.25"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:fontFamily="@font/actor" />
+
+                    <ImageView
+                        android:id="@+id/spriteadd"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="15"
+                        app:srcCompat="@drawable/carticon" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
